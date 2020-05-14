@@ -1,6 +1,7 @@
-FROM sonarqube:6.3
-
-ENV SONAR_DOWNLOAD_URL https://sonarsource.bintray.com/Distribution
+#FROM sonarqube:6.3
+FROM sonarqube:8.3.1-community
+#ENV SONAR_DOWNLOAD_URL https://sonarsource.bintray.com/Distribution
+ENV SONAR_DOWNLOAD_URL https://binaries.sonarsource.com/Distribution
 
 # Installing Plugins
 RUN cd /opt/sonarqube/extensions/plugins/
